@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Page Not Found</title>
+  <script type="text/javascript">
+    // GitHub Pages에서 404 오류가 발생할 때 index.html로 리디렉션
+    var redirectTo = window.location.pathname.substr(window.location.pathname.indexOf('/', 1));
+    if (!redirectTo.startsWith("/btest/")) {
+      redirectTo = "/btest" + redirectTo;
+    }
+    window.location.href = window.location.origin + redirectTo;
+  </script>
+</head>
+
+<body>
+  <h1>404 - Page Not Found</h1>
+  <p>Redirecting...</p>
+</body>
+
+</html>
